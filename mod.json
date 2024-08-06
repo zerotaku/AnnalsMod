@@ -1,0 +1,8 @@
+{
+  "name": "AnnalsDict",
+  "author": "zerotaku",
+  "version": "0.0.1",
+  "targetGameBuild": 666,
+  "description": "整合盒子所有的历史",
+  "iconPath": "icon.png"
+}

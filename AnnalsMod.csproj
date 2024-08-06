@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>11</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <OutputType>Library</OutputType>
+        <RootNamespace>AnnalsMod</RootNamespace>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include=".github\ISSUE_TEMPLATE\bug-report-en.yaml" />
+        <Content Include=".github\ISSUE_TEMPLATE\bug-report-zh.yaml" />
+        <Content Include="default_config.json" />
+        <Content Include="icon.png" />
+        <Content Include="Locales\cz.json" />
+        <Content Include="Locales\en.json" />
+        <Content Include="mod.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>Lib\0Harmony.dll</HintPath>
+        </Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>Lib\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro.Editor">
+			<HintPath>Lib\Unity.TextMeshPro.Editor.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>..\..\worldbox_Data\StreamingAssets\mods\NML\Assembly-CSharp-Publicized.dll</HintPath>
+		</Reference>
+        <Reference Include="NeoModLoader">
+            <HintPath>..\..\worldbox_Data\StreamingAssets\mods\NeoModLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\..\worldbox_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\..\worldbox_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>..\..\worldbox_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+        <Reference Include="UnityEngine.UI">
+            <HintPath>..\..\worldbox_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>..\..\worldbox_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Lib\" />
+    </ItemGroup>
+
+</Project>
